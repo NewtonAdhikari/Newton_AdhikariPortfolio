@@ -33,10 +33,10 @@ body {
 }
 
 .container {
-    max-width: 100%;
+    max-width: 120px;
     margin: 0 auto;
     padding: 0 30px;
-    width:100%;
+    
 }
 
 .section-padding {
