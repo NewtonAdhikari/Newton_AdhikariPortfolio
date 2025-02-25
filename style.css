@@ -156,18 +156,18 @@ nav {
 }
 
 
-.nav-links {
+.nav-container {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-.nav-links li {
+    max-width: 100%;
     margin-left: 30px;
+    color: #64FFDA;
+    gap: 20px; /* Added gap property to create space between divs */
 }
 
-.nav-links li a {
+.nav-link a {
     text-decoration: none;
     color: #CCD6F6;
     font-weight: 400;
@@ -176,7 +176,7 @@ nav {
     padding-bottom: 5px;
 }
 
-.nav-links li a::after {
+.nav-link a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -187,14 +187,9 @@ nav {
     transition: width 0.3s ease;
 }
 
-.nav-links li a:hover {
-    color: #64FFDA;
-}
-
-.nav-links li a:hover::after {
+.nav-link a:hover::after {
     width: 100%;
 }
-
 
 /*--------------------------------------------------------------
   3. Hero Section
