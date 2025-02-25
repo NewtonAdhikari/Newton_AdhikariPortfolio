@@ -161,10 +161,11 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
-    max-width: 100%;
-    margin-left: 30px;
+    width: 100%;
     color: #64FFDA;
-    gap: 20px; /* Added gap property to create space between divs */
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping to multiple rows if needed */
 }
 
 .nav-link a {
@@ -189,6 +190,48 @@ nav {
 
 .nav-link a:hover::after {
     width: 100%;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .nav-container {
+        gap: 10px; /* reduced gap */
+    }
+
+    .nav-link a {
+        font-size: 0.9em; /* Reduced font size */
+        padding: 5px 10px; /* Reduced padding */
+    }
+}
+
+/* Responsive Styles for Very Small Screens (e.g., 320px) */
+@media (max-width: 320px) {
+    .nav-container {
+        gap: 5px;
+    }
+
+    .nav-link a {
+        font-size: 0.8em;
+        padding: 4px 8px;
+    }
+}
+
+/* Responsive Styles for Tablets and Larger Phones (e.g., 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-container {
+        gap: 15px;
+    }
+
+    .nav-link a {
+        font-size: 1em;
+    }
+}
+
+/* Responsive Styles for very large screens */
+@media (min-width: 1025px){
+    .nav-container{
+        gap: 30px;
+    }
 }
 
 /*--------------------------------------------------------------
