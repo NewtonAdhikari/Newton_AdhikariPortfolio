@@ -1,2 +1,2 @@
-# Newton_AdhikariPortfolio
-My Personal Portfolio
+# Newton_Adhikari
+My Portfolio
